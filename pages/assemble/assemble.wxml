@@ -1,0 +1,40 @@
+<!--pages/assemble/assemble.wxml-->
+<image class='bg-img' src='{{dataList.img.img}}'></image>
+<view class='content' wx:if="{{model==0}}">
+    <view class="l-item" wx:for="{{dataList.list}}" wx:key="{{index}}" data-index="{{index}}" bindtap="getinfo">
+        <view class="l-img">
+            <image src="{{item.path_img}}"></image>
+        </view>
+        <view class="l-info">
+            <view class='l-name'>{{item.title}}</view>
+            <view class="l-time">
+                已有{{item.fight_group_num}}人拼团成功
+            </view>
+        </view>
+        <image class="l-price" src='../../images/p-icon01.png' mode="widthFix"></image>
+    </view>
+</view>
+<view class='content' wx:if="{{model==1}}">
+    <view class="l-item" wx:for="{{dataList2.list}}" wx:key="{{index}}" data-index="{{index}}" bindtap='getinfo2'>
+        <view class="l-img">
+            <image src="{{item.path_img}}"></image>
+        </view>
+        <view class="l-info">
+            <view class='l-name'>{{item.title}}</view>
+            <view class="l-time l-time2">
+                <image  wx:for="{{item.avatar}}" wx:key="index" wx:for-item="newitem" src='{{newitem.avatar}}'></image>
+            </view>
+        </view>
+        <view class="l-price2 g-chang-bg">{{item.is_group}}</view>
+    </view>
+</view>
+<view class='nav'>
+    <view bindtap='changelist' style='background:{{color[0]}}'>
+        拼团首页
+        <view wx:if="{{isnav==0}}" class='g-chang-bg'></view>
+    </view>
+    <view bindtap='changelist2' style='background:{{color[1]}}'>
+        我的拼团
+        <view wx:if="{{isnav==1}}" class='g-chang-bg'></view>
+    </view>
+</view>

@@ -1,0 +1,79 @@
+/* pages/driedfood/driedfood.wxss */
+page{
+    padding-bottom: 60rpx;
+}
+.nav{
+     display: flex;
+    background: #282B30;
+    position: relative;
+    top: 2rpx;
+}
+
+.nav > view{
+    flex: 1;
+    text-align: center;
+    height: 80rpx;
+    line-height: 80rpx;
+    position: relative;
+}
+.nav > view view{
+    height: 6rpx;
+    width: 120rpx;
+    position: absolute;
+    left: 50%;
+    margin-left: -60rpx;
+    bottom: 0;
+    border-radius:6rpx;
+}
+.scroll{
+    padding: 20rpx;
+    height: calc(100% - 80rpx);
+    box-sizing: border-box;
+}
+.l-item{
+    overflow: hidden;
+    margin-bottom: 20rpx;
+    padding: 20rpx 20rpx;
+    position: relative;
+    background: #282B30;
+}
+.l-img{
+    float: left;
+    width: 200rpx;
+}
+.l-img image{
+    width: 180rpx;
+    height: 180rpx;
+}
+.l-info{
+    margin-left: 200rpx;
+    padding:0 40rpx;
+    box-sizing: border-box;
+}
+.l-price{
+    width: 120rpx;
+    position: absolute;
+    bottom: 6rpx;
+    right: 6rpx;
+}
+.l-time{
+    overflow: hidden;
+}   
+.l-name{
+   overflow: hidden;
+   white-space:  nowrap;
+   text-overflow:  ellipsis;
+}
+.progress{
+    margin: 32rpx 0;
+}
+
+.l-price{
+    width: 120rpx;
+    height: 52rpx;
+    color: #333;
+    position: absolute;
+    border-radius:4rpx;
+    line-height: 52rpx;
+    text-align: center; 
+}

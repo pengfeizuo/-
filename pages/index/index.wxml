@@ -1,0 +1,130 @@
+<!--pages/index/index.wxml-->
+<view class='swiper'>
+
+    <swiper indicator-dots="{{true}}" indicator-color="{{color}}">
+        <block wx:for="{{datainfo.bannerList}}" wx:key="{{index}}">
+            <swiper-item>
+                <image src="{{item.img}}" class="slide-image" data-index="{{index}}" bindtap='getbanner'></image>
+            </swiper-item>
+        </block>
+    </swiper>
+</view>
+<view class="menu">
+    <l-grid row-num="3">
+        <l-grid-item key="one" slot="one" data-index="{{0}}" bind:lintap="addForm">
+            <view class="menu-icon">
+                <image src="../../images/nav1.png" mode="widthFix" style="width:80rpx"></image>
+            </view>
+            <view class="text menu-type">名师讲堂</view>
+        </l-grid-item>
+        <l-grid-item key="two" slot="two" data-index="{{1}}" bind:lintap="addForm">
+            <view class="menu-icon">
+                <image src="../../images/nav2.png" mode="widthFix"></image>
+            </view>
+            <view class="text menu-type">干货满满</view>
+        </l-grid-item>
+        <l-grid-item key="four" slot="four" data-index="{{2}}" bind:lintap="addForm">
+            <view class="menu-icon">
+                <image src="../../images/nav3.png" mode="widthFix"></image>
+            </view>
+            <view class="text menu-type">免费拼团</view>
+        </l-grid-item>
+    </l-grid>
+</view>
+<view class="advert">
+    <view bindtap='getshares'>
+        <image src='{{datainfo.money.img}}' mode='widthFix'></image>
+    </view>
+    <view bindtap='getGroup'>
+        <image src='{{datainfo.compase.img}}' mode='widthFix'></image>
+    </view>
+</view>
+<view class="notice">
+    <image src='../../images/gg-bg.png'></image>
+    <view class='gong-g'>公告：</view>
+    <view class='wp'>
+        <view class='box'>
+            <view id='txt2' class='txt' style='left: {{posLeft1}}px'>
+                <text wx:for="{{datainfo.bulletin}}" wx:key="{{index}}">{{item.content}}</text>
+            </view>
+        </view>
+    </view>
+</view>
+
+
+<view class="constantly-box">
+    <view class="c-title">实时解盘</view>
+    <view class="constantly" bindtap='getrealtime'>
+        <view class='constantly-state g-chang-bg'>
+        {{newSolution.status_name}}
+            <image src='../../images/icon010.png' mode='widthFix'></image>
+        </view>
+        <view class='constantly-time'>{{newSolution.date}} 【{{newSolution.title}}】</view>
+        <view class="constantly-title">{{newSolution.subtitle}}</view>
+        <view class='c-name'>
+            <text></text>{{newSolution.nickname}}</view>
+    </view>
+
+</view>
+<view class="s-list">
+    <view class='s-list-item' wx:for="{{pastSolution}}" wx:key="{{index}}" data-index="{{index}}" bindtap='getlistinfo'>
+        <view class='s-list-tit ovhidd'>
+            <image class='s-photo' src='{{item.portrait}}'></image>
+            <view class='s-tarth'>
+                <view class='s-name'>{{item.nickname}}
+                    <view>
+                        <image src='../../images/changxin.png' mode='widthFix'></image>
+                    </view>
+                </view>
+                <view class='s-intr'>{{item.subtitle}}</view>
+            </view>
+        </view>
+        <view class='s-content'>
+            <view>
+                {{item.title}}
+            </view>
+            <image src='../../static/img/561.png' mode='widthFix'></image>
+            <view class='s-time'>{{item.broadcast_time}}</view>
+        </view>
+    </view>
+    
+</view>
+<view class='guide-share'>
+    有钱一起赚，选股利器分享朋友  <view>去分享<text class="iconfont iconfenxiang4"></text> <button open-type='share' class=''></button></view>
+</view>
+<view class="checkin" bindtap="getCheckin" wx:if="{{datainfo.checkIn==0}}">
+    <image src='../../static/img/qiandao.png' mode='widthFix'></image>
+</view>
+<l-toast />
+<l-popup show="{{ispopup}}"> 
+    <view class='popup-box'>
+        <view class='popup-title'>提示</view>
+        <view class='popup-center'>签到成功，获得<text>20</text>股币</view>
+        <view class='popup-btn'>
+            <view class='popup-qx g-chang-bg' bindtap='cancel'>确定</view>
+        </view>
+    </view>
+</l-popup>
+<l-popup show="{{ispopup2}}"> 
+    <view class='popup-box'>
+        <view class='popup-title'>提示</view>
+        <view class='popup-center'>手机授权登陆后享受更多免费服务</view>
+        <view class='popup-btn'>
+            <view class='popup-qx text-color' bindtap='cancel'>取消</view>
+            <view class='popup-qd g-chang-bg' bindtap='confirm'>
+                <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber"></button>
+                确定
+            </view>
+        </view>
+    </view>
+</l-popup>
+<!-- <view show="{{isload}}">  -->
+    <view class='loading' wx:if="{{isload}}" catchtouchmove="preventTouchMove">
+        <button class="getuserinfo" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo"></button>
+        <view class="load-box">
+            <image src='../../images/logo.png' mode='widthFix'></image>
+            <view class='text-color'>点击任意处授权登陆</view>
+        </view>
+    </view>
+<!-- </view> -->
+ <image wx:if="{{isload}}" class='tabber-img' src='../../images/tabber-img.png' mode='widthFix'></image>

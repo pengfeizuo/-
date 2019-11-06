@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/bannerInfo/bannerInfo",
+    "pages/famouTeach/famouTeach",
+    "pages/famouTeach/teachInfo/teachInfo",
+    "pages/person/person",
+    "pages/makeGb/makeGb",
+    "pages/driedfood/driedfood",
+    "pages/assemble/assemble",
+    "pages/assemble/assembleInfo/assembleInfo",
+    "pages/shares/shares",
+    "pages/shares/newShares/newShares",
+    "pages/group/group",
+    "pages/realtime/realtime",
+    "pages/realtime/catalog/catalog",
+    "pages/order/order",
+    "pages/order/orderinfo/orderinfo",
+    "pages/Myaccount/Myaccount",
+    "pages/gongg/gongg"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "backgroundColor": "#282B30",
+    "navigationBarBackgroundColor": "#282B30",
+    "navigationBarTitleText": "股顺宝",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "position": "bottom",
+    "backgroundColor": "#282B30",
+    "borderStyle": "white",
+    "selectedColor": "#e7cd98",
+    "color": "#fff",
+    "custom": false,
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/static/img/home.png",
+        "selectedIconPath": "static/img/home@dis.png"
+      },
+      {
+        "pagePath": "pages/makeGb/makeGb",
+        "text": "赚股币",
+        "iconPath": "/static/img/category.png",
+        "selectedIconPath": "static/img/category@dis.png"
+      },
+      {
+        "pagePath": "pages/person/person",
+        "text": "我的",
+        "iconPath": "/static/img/me.png",
+        "selectedIconPath": "static/img/me@dis.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

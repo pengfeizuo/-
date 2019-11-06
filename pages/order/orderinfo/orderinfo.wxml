@@ -1,0 +1,16 @@
+<!--pages/order/orderinfo/orderinfo.wxml-->
+<view class='content'>
+    <image src='../../../images/order-bg.png'></image>
+    <view class='o-left'>
+        <text class='text-color'>-{{datainfo.price}}</text> 股币
+    </view>
+    <view class='o-right'>
+        <view>当前状态：<text wx:if="{{datainfo.status==1}}">支付成功</text></view>
+        <view>商品名称：{{datainfo.product_title}}</view>
+        <view>支付时间：{{datainfo.pay_time}}</view>
+    </view>
+</view>
+
+<view class='guide-share'>
+    有钱一起赚，选股利器分享朋友  <view>去分享<text class="iconfont iconfenxiang4"></text> <button open-type='share' class=''></button></view>
+</view>

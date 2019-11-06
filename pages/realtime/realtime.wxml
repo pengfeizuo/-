@@ -1,0 +1,48 @@
+<!--pages/realtime/realtime.wxml-->
+<view class='title'>
+    <image class='z-bg' src='../../images/z-bg.png'></image>
+    <view class='t-time'>
+       <view> {{datainfo.title.broadcast_time}}</view>
+        <image src='../../images/zhibo.png' mode='widthFix'></image>
+    </view>
+    <view class='t-welecome'>
+        {{datainfo.title.title}}
+        <view>
+            <image src='../../images/renshu.png' mode='widthFix'></image>
+            {{datainfo.title.view}}
+        </view>
+    </view>
+</view>
+
+<view class="content">
+    <view class='re-item' wx:for="{{dataList}}" wx:key="{{index}}">
+        <view class='re-left'>
+            <image src='{{item.img}}'></image>
+            <text class='text-color'>{{item.create_time}}</text>
+        </view>
+        <view class='re-content'>
+            <!-- <view>xxx老师</view> -->
+            <rich-text class='re-text' nodes="{{item.content}}"></rich-text>
+        </view>
+    </view>
+    
+</view>
+
+
+<view class='nav'>
+    <view class='new-g' bindtap='getnew'>
+        最新公告
+    </view>
+    <view bindtap='getcatalog'>
+        往期内容
+    </view>
+</view>
+<l-popup show="{{ispopup}}"> 
+    <view class='popup-box'>
+        <view class='popup-title'>公告</view>
+        <view class='popup-center'>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</view>
+        <view class='popup-btn'>
+            <view class='popup-qx text-color' bindtap='cancel'>关闭</view>
+        </view>
+    </view>
+</l-popup>

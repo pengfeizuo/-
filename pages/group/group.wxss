@@ -1,0 +1,142 @@
+/* pages/group/group.wxss */
+.title{
+    display: flex;
+    background: #282B30;
+    text-align: center;
+    margin-top: 2rpx;
+}
+.title > view{
+    flex: 1;
+    height: 80rpx;
+    line-height: 80rpx;
+    position: relative;
+}
+.title .txt-semll{
+    flex: 1.1;
+}
+.title .flex-semll{
+    flex: 0.6
+}
+.title .flex-big{
+    flex: 1.1
+}
+.title > view::after{
+    position: absolute;
+    content: '';
+    width: 2rpx;
+    height: 40rpx;
+    top: 20rpx;
+    right: 0;
+    background: #000;
+}
+.title > view:last-child::after{
+    display: none
+}
+.g-list{
+    display: flex;
+    border-bottom:2rpx solid #333; 
+    height: 100rpx;
+}
+.g-list > view{
+    flex: 1;
+    line-height: 100rpx;
+    text-align: center;
+   position: relative;
+}
+.g-list .flex-semll{
+    flex: 0.6
+}
+.g-list .flex-big{
+    flex: 1.1;
+    color: rgb(245, 27, 42)
+}
+.g-list > view:first-child{
+    line-height: 40rpx;
+    padding-top: 10rpx;
+}
+.g-list .txt-semll{
+    flex: 1.1;
+}
+.g-list image{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+    z-index: 1
+}
+/* .mosaic{
+    color: rgb(17, 17, 19);
+} */
+.footer{
+    position: fixed;
+    width: 100%;
+    height: 100rpx;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    line-height: 100rpx;
+    font-size: 32rpx;
+    color: #333
+}
+.popup-box{
+	border-radius: 10rpx;
+	width: 76vw;
+	height: auto;
+	background: #282B30;
+	overflow: hidden;
+	/* position: relative; */
+	box-sizing: border-box;
+    margin: auto;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+.popup-title{
+    text-align: center;
+    font-size: 40rpx;
+    line-height: 80rpx;
+    border-bottom: 2rpx solid #333
+}
+.popup-center{
+    padding: 40rpx 60rpx;
+    text-align: center;
+    line-height: 48rpx;
+    font-size: 32rpx;
+    letter-spacing: 2rpx;
+}
+.popup-btn {
+    overflow: hidden;
+    padding: 40rpx 50rpx;
+    padding-top: 20rpx;
+    padding-bottom: 50rpx;
+}
+.popup-btn view{
+    width: 45%;
+    height: 60rpx;
+    line-height: 60rpx;
+    text-align: center;
+    border-radius: 6rpx;
+}
+.popup-qx{
+    float: left;
+    border: 1px solid #f8d6a1;
+    box-sizing: border-box;
+}
+.popup-qd{
+    float: right;
+    color: #333;
+}
+.g-model{
+    padding: 20rpx;
+}
+.g-model text{
+    margin-right: 100rpx;
+    
+}
+.g-model view{
+    line-height: 44rpx;
+    margin-top: 10rpx;
+    text-align: justify;
+}

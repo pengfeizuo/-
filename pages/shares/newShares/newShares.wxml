@@ -1,0 +1,28 @@
+<!--pages/shares/newShares/newShares.wxml-->
+<view class='g-header'>
+    <text class='text-color'>{{datainfo.stock_name}}</text> （{{datainfo.shares_num}}）
+</view>
+<view class='nav'>
+    <view>
+        操作周期
+        <view class='ng-na text-color'>{{datainfo.operating_cycle}}</view>
+    </view>
+    <view>
+        阻力位
+        <view class='ng-na text-color'>{{datainfo.resistance}}</view>
+    </view>
+    <view>
+        支持位
+        <view class='ng-na text-color'>{{datainfo.support}}</view>
+    </view>
+    <view>
+        仓位
+        <view class='ng-na text-color'>{{datainfo.position}}</view>
+    </view>
+</view>
+<view class='g-notice'>
+    <view class='g-notice-tit text-color'>入选逻辑：</view>
+    <view>
+       {{datainfo.logic}}
+    </view>
+</view>

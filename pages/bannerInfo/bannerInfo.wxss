@@ -1,0 +1,22 @@
+/* pages/bannerInfo/bannerInfo.wxss */
+page{
+    padding: 30rpx;
+    box-sizing: border-box;
+}
+.content{
+    padding-bottom:100rpx; 
+}
+.title{
+    font-size: 28rpx;
+    font-weight: bold;
+}
+.subtitle{
+    overflow: hidden;
+    width: 100%;
+    font-size: 28rpx;
+    padding: 20rpx 0;
+}
+
+.subtitle text:last-child{
+    margin-left: 100rpx;
+}

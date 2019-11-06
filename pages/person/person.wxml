@@ -1,0 +1,6 @@
+<view class='content'>
+    <l-list l-class="l-style" title="我的订单" bindtap="getorder" />
+    <l-list l-class="l-style" title="我的账户" bindtap="getaccount" />
+    <l-list l-class="l-style" title="我的客服" />
+    <button wx:if="{{!isload}}" class="getuserinfo" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo"></button>
+</view>

@@ -1,0 +1,51 @@
+<!--pages/famouTeach/teachInfo/teachInfo.wxml-->
+<view class="l-item" wx:for="{{dataList}}" wx:key="{{index}}" data-index="{{index}}">
+    <view class="l-img">
+        <image class='list-bg' src="../../../images/a-bg.png"></image>
+        <view class='audio-model'>
+            <image wx:if="{{!item.audio_pay}}" class='a-no' src='../../../images/a-no.png' mode='widthFix' data-index="{{index}}" bindtap="startaudio"></image>
+            <image wx:if="{{item.audio_pay}}" class='a-art' src='../../../images/a-act.png' mode='widthFix' data-index="{{index}}" bindtap="stopaudio"></image>
+        </view>
+    </view>
+    <view class="l-info">
+        <view class='l-name'>{{item.titie}}</view>
+        <view class='progress'>
+            <image src='../../../images/a-jd.png' style='width:{{item.jwidth}}%'></image>
+        </view>
+        <view class="l-time">
+            <view>{{item.pay_time}}</view>
+            <view>{{item.end_time}}</view>
+        </view>
+    </view>
+    <view class="l-price">
+       <image wx:if="{{item.order_status==1}}" src='../../../images/g-icon01.png' mode='widthFix'></image>
+        <image wx:if="{{item.is_free==1}}" src='../../../images/g-icon02.png' mode="widthFix"></image>
+        <view wx:if="{{item.is_free!=1&&item.order_status!=1}}" class='g-chang-bg'>{{item.dividend}}股币</view>
+    </view>
+</view>
+
+<view class='guide-share'>
+    有钱一起赚，选股利器分享朋友  <view>去分享<text class="iconfont iconfenxiang4"></text> <button open-type='share' class=''></button></view>
+</view>
+<l-popup show="{{ispopup}}"> 
+    <view class='popup-box'>
+        <view class='popup-title'>提示</view>
+        <view class='popup-center'>收听，需要消耗<text>{{dividend}}</text>股币是否继续？</view>
+        <view class='popup-btn'>
+            <view class='popup-qx text-color' bindtap='cancel'>取消</view>
+            <view class='popup-qd g-chang-bg' bindtap='confirm'>确定</view>
+        </view>
+    </view>
+</l-popup>
+<l-popup show="{{ispopup2}}">
+    <view class='popup-box'>
+        <view class='popup-title'>提示</view>
+        <view class='popup-center' style="text-align: center;">
+        	股币数量不足
+        </view>
+        <view class='popup-btn'>
+            <view class='popup-qd g-chang-bg' bindtap='getGb' style="float: none;margin: auto;">获取股币</view>
+        </view>
+    </view>
+</l-popup>
+<l-toast />

@@ -1,0 +1,153 @@
+/**app.wxss**/
+
+@import "/style/iconfont.wxss";
+/* .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 200rpx 0;
+    box-sizing: border-box;
+} */
+
+page {
+    font-family: '微软雅黑';
+    height: 100%;
+    font-size: 28rpx;
+    box-sizing: border-box;
+    background: rgb(17, 17, 19);
+    /* color:#e7cd98; */
+    color: #fff;
+}
+
+image {
+    width: auto;
+    height: auto;
+}
+
+.lf {
+    float: left;
+}
+
+.rf {
+    float: right;
+}
+
+.guide-share {
+    height: 80rpx;
+    width: 100%;
+    line-height: 80rpx;
+    text-align: center;
+    background: rgba(227, 195, 146, 0.7);
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+.checkin{
+    line-height: 80rpx;
+    position: fixed;
+    bottom: 100rpx;
+    right: 40rpx; 
+    z-index: 2;
+}
+.checkin image{
+    width: 100rpx;
+}
+.ovhidd{
+    overflow: hidden;
+}
+.text-color{
+    position: relative; 
+    background-image:-webkit-linear-gradient(left,#e3c392,#bd9d77,#bd976a); 
+    -webkit-background-clip:text; 
+    -webkit-text-fill-color:transparent; 
+}
+.g-chang-bg{
+    background: -webkit-linear-gradient(left, #f8d6a1, #bc9c76); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #f8d6a1, #bc9c76); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #f8d6a1, #bc9c76); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #f8d6a1, #bc9c76); /* 标准的语法（必须放在最后） */
+}
+.popup-box{
+	border-radius: 10rpx;
+	width: 76vw;
+	height: auto;
+	background: #282B30;
+	overflow: hidden;
+	box-sizing: border-box;
+    margin: auto;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+.popup-title{
+    text-align: center;
+    font-size: 40rpx;
+    line-height: 80rpx;
+    border-bottom: 2rpx solid #333
+}
+.popup-center{
+    padding: 40rpx 60rpx;
+    text-align: justify;
+    line-height: 48rpx;
+    font-size: 32rpx;
+    letter-spacing: 2rpx;
+}
+.popup-btn {
+    overflow: hidden;
+    padding: 40rpx 50rpx;
+    padding-top: 20rpx;
+    padding-bottom: 50rpx;
+}
+.popup-btn view{
+    width: 45%;
+    height: 60rpx;
+    line-height: 60rpx;
+    text-align: center;
+    border-radius: 6rpx;
+    position: relative;
+}
+.popup-qx{
+    float:left;
+    border:1px solid #f8d6a1;
+    box-sizing:border-box;
+}
+
+.popup-qd{
+    float: right;
+    color: #333;
+}
+.popup-qd button{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+.guide-share button{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+.guide-share > view{
+    display: inline;
+    margin-left: 60rpx;
+    width: 100rpx;
+    position: relative;
+}
+.guide-share > view text{
+    margin-left: 10rpx;
+    position: relative;
+    top: 2rpx;
+}

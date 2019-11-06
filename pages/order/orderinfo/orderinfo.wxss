@@ -1,0 +1,33 @@
+/* pages/order/orderinfo/orderinfo.wxss */
+.content{
+    overflow: hidden;
+    position: relative;
+    padding: 60rpx 40rpx;
+}
+.content image{
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0
+}
+.o-left{
+    width: 200rpx;
+    float: left;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    line-height: 120rpx;
+}
+.o-left text{
+    font-size: 80rpx;
+    margin-right: 10rpx;
+    /* font-weight: bold; */
+}
+.o-right{
+    margin-left: 200rpx;
+    position: relative;
+    z-index: 1;
+    line-height: 44rpx;
+}

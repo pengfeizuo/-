@@ -1,0 +1,47 @@
+<!--pages/makeGb/makeGb.wxml-->
+
+<view class='z-item' wx:for="{{datalist}}" wx:key="{{index}}">
+    <view class='z-label'>
+        {{item.title}}：
+    </view>
+    <view class='z-info'>
+        <text class='text-color'>+{{item.currency_num}}</text> 股币 <text wx:if="{{item.total}}">{{item.complete_num}}/{{item.total}}</text>
+        <image wx:if="{{item.status==1}}" class='z-state' src='../../images/z-ok.png' mode='widthFix'></image>
+        <view wx:if="{{item.status==3&&index==1}}" class='c-state g-chang-bg' bindtap='getGbok'>领取</view>
+        <image wx:if="{{item.status==2}}" class='z-state' src='../../images/z-go.png' mode='widthFix' data-index="{{index}}" bindtap='getGb'></image>
+        <button wx:if="{{index==1&&item.status==2}}" open-type='share' class='z-state-btn'></button>
+    </view>
+
+</view>
+<view class='guide-share'>
+    有钱一起赚，选股利器分享朋友  <view>去分享<text class="iconfont iconfenxiang4"></text> <button open-type='share' class=''></button></view>
+</view>
+<l-popup show="{{ispopup}}"> 
+    <view class='popup-box'>
+        <view class='popup-title'>提示</view>
+        <view class='popup-center'>签到成功，获得<text>20</text>股币</view>
+        <view class='popup-btn'>
+            <view class='popup-qd g-chang-bg' bindtap='cancel'>确定</view>
+        </view>
+    </view>
+</l-popup>
+<l-popup show="{{ispopup2}}"> 
+    <view class='popup-box popup-box2'>
+        <view class='popup-title'>邀请有礼</view>
+        <view class='i-bg'>
+            <image src="{{yaolist.img.img}}" mode='widthFix'></image>
+        </view>
+        <view class='i-center'>
+            <view class='i-item' wx:for="{{yaolist.list}}" wx:key="{{index}}">
+                <text>{{index+1}}</text> 
+                <image class='y-logo' src='{{item.img}}'></image>
+                <text>邀请奖励：股币X{{item.currency}}</text>
+                 <view class='caozuo'>
+                    <view wx:if="{{item.status==0}}" class='c-state1 text-color'><button open-type='share' class=''></button>邀请</view>
+                    <view wx:if="{{item.status==1}}" class='c-state g-chang-bg' bindtap="getReceive">领取</view>
+                    <view wx:if="{{item.status==2}}" class='c-state2'>已领取</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</l-popup>

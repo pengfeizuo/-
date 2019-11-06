@@ -1,0 +1,25 @@
+<!--pages/order/order.wxml-->
+<view class='content'>
+    <view class="l-item" wx:for="{{datainfo}}" wx:key="{{index}}">
+        <view class="l-img">
+            <image src="{{item.img}}"></image>
+        </view>
+        <view class="l-info">
+            <view>{{item.product_name}}</view>
+            <view class="l-time">
+                {{item.pay_time}}
+            </view>
+            
+        </view>
+        <view class='order-caozuo'>
+            <view>{{item.price}}股币</view>
+            <text class='text-color' data-index="{{index}}" bindtap='getInfo'>订单详情</text>
+            <view class='stop g-chang-bg'></view>
+        </view>
+    </view>
+    
+</view>
+
+<view class='guide-share'>
+    有钱一起赚，选股利器分享朋友  <view>去分享<text class="iconfont iconfenxiang4"></text> <button open-type='share' class=''></button></view>
+</view>

@@ -1,0 +1,38 @@
+<!--pages/shares/shares.wxml-->
+<view class='nav'>
+    <view>股票名称</view>
+    <view>入选时间</view>
+    <view>调入价位</view>
+    <view>调出价位</view>
+    <view>涨幅</view>
+</view>
+<view class='g-list' wx:for="{{datainfo.list}}" wx:key="{{index}}">
+    <view>
+        {{item.stock_name}}
+        <view>{{item.shares_num}}</view>
+    </view>
+    <view>{{item.selected_time}}</view>
+    <view>{{item.transfer_in}}</view>
+    <view>{{item.call_out}}</view>
+    <view>{{item.gain}}</view>
+</view>
+<view class='g-notice'>
+    <view class='g-notice-tit text-color'>今日公告：</view>
+    <view wx:for="{{datainfo.bulletin_list}}" wx:key="{{index}}">
+        {{item.create_time}} <text>{{item.content}}</text>
+    </view>
+</view>
+<view class='footer g-chang-bg' bindtap='getnew'>
+    获取新票
+</view>
+<l-popup show="{{ispopup}}"> 
+    <view class='popup-box'>
+        <view class='popup-title'>提示</view>
+        <view class='popup-center'>获取新票，需要消耗<text>{{datainfo.bottom.currency_num}}</text>股币是否继续？</view>
+        <view class='popup-btn'>
+            <view class='popup-qx text-color' bindtap='cancel'>取消</view>
+            <view class='popup-qd g-chang-bg' bindtap='confirm'>确定</view>
+        </view>
+    </view>
+</l-popup>
+<l-toast />

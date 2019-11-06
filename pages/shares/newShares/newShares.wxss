@@ -1,0 +1,58 @@
+/* pages/shares/newShares/newShares.wxss */
+.g-header{
+    background: #282B30;
+    margin-top: 4rpx;
+    padding: 0 50rpx;
+    line-height: 100rpx;
+}
+.g-header text{
+    font-size: 40rpx;
+     font-weight: bold;
+}
+.nav{
+    display: flex;
+    background: #282B30;
+    position: relative;
+    top: 2rpx;
+}
+
+.nav > view{
+    flex: 1;
+    text-align: center;
+    position: relative;
+    padding: 18rpx 0;
+}
+.ng-na {
+    margin-top: 20rpx;
+    font-weight: bold;
+}
+
+
+.nav > view::after{
+    position: absolute;
+    content: '';
+    width: 2rpx;
+    height: 90rpx;
+    top: 20rpx;
+    right: 0;
+    background: #000;
+}
+.nav > view:last-child::after{
+    display: none
+}
+.g-notice{
+    padding: 40rpx;
+    font-size: 28rpx;
+    line-height: 40rpx;
+}
+.g-notice view{
+    margin-bottom: 10rpx;
+    text-align: justify;
+}
+.g-notice text{
+    margin-left: 10rpx;
+}
+.g-notice-tit{
+    font: 32rpx;
+    font-weight: bold;
+}

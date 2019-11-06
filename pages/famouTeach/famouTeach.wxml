@@ -1,0 +1,9 @@
+<!--pages/famouTeach/famouTeach.wxml-->
+<view class="l-item" wx:for="{{forumList}}" wx:key="{{index}}" data-index="{{index}}" bindtap='getinfo' >
+    <view class="l-img"><image src="{{item.img}}"></image></view>
+    <view class="l-info">{{item.banner_name}}</view>
+</view>
+
+<view class='guide-share'>
+    有钱一起赚，选股利器分享朋友  <view>去分享<text class="iconfont iconfenxiang4"></text> <button open-type='share' class=''></button></view>
+</view>

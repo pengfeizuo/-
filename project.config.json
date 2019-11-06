@@ -1,0 +1,162 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"nodeModules": true,
+		"autoAudits": false,
+		"uglifyFileName": true,
+		"checkInvalidKey": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.8.0",
+	"appid": "wx3b625e82e23c09f3",
+	"projectname": "garbage",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "讲堂",
+					"pathName": "pages/famouTeach/famouTeach",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "目录",
+					"pathName": "pages/famouTeach/teachInfo/teachInfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "干货",
+					"pathName": "pages/driedfood/driedfood",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "免费拼团",
+					"pathName": "pages/assemble/assemble",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "拼团详情",
+					"pathName": "pages/assemble/assembleInfo/assembleInfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 11,
+					"name": "股票",
+					"pathName": "pages/shares/shares",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "股票new",
+					"pathName": "pages/shares/newShares/newShares",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "组合",
+					"pathName": "pages/group/group",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "实时解盘",
+					"pathName": "pages/realtime/realtime",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "往期目录",
+					"pathName": "pages/realtime/catalog/catalog",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "赚股币",
+					"pathName": "pages/makeGb/makeGb",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/person/person",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的订单",
+					"pathName": "pages/order/order",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "订单详情",
+					"pathName": "pages/order/orderinfo/orderinfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的账户",
+					"pathName": "pages/Myaccount/Myaccount",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "滚动",
+					"pathName": "pages/gongg/gongg",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,163 @@
+/* pages/realtime/realtime.wxss */
+.title{
+    position: relative;
+    overflow: hidden;
+    padding: 30rpx 0;
+    background: #282B30
+}
+.title .z-bg{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    height: 100%;
+}
+.title view{
+    position: relative;
+    z-index: 1;
+}
+.t-time{
+    width: 280rpx;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+.t-time::after{
+    position: absolute;
+    content: '';
+    height: 100%;
+    top: 0rpx;
+    width: 2rpx;
+    background: #333;
+    right: 0;
+    z-index:2;
+}
+.t-time image{
+    width: 120rpx;
+    margin-top: 30rpx;
+}
+.t-welecome{
+    margin-left: 280rpx;
+    padding-left: 60rpx;
+}
+.t-welecome image{
+    width: 36rpx;
+    margin-top: 30rpx;
+}
+.nav{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    background: #282B30;
+    width: 100%;
+}
+
+.nav > view{
+    flex: 1;
+    text-align: center;
+    height: 100rpx;
+    line-height: 100rpx;
+    position: relative;
+}
+.new-g::after{
+    position: absolute;
+    content: '';
+    width: 2rpx;
+    height: 100rpx;
+    top: 0rpx;
+    right: 0;
+    background: #000;
+}
+.content{
+    padding: 50rpx 30rpx;
+    padding-bottom: 100rpx;
+}
+.re-item{
+    overflow: hidden;
+    margin-bottom: 30rpx;
+}
+.re-left{
+    width: 100rpx;
+    float: left;
+    text-align: center;
+}
+.re-left image{
+    width: 100rpx;
+    height: 100rpx;
+    border-radius:100rpx; 
+}
+.re-content{
+    margin-left: 140rpx;
+    padding-top:20rpx;
+    padding-bottom: 20rpx;
+    padding-left: 30rpx;
+    padding-right: 10rpx;
+    margin-right: 20rpx; 
+    box-sizing: border-box;
+    background: #fff;
+    border-radius:6rpx;
+    position: relative;
+    top: 20rpx;
+    overflow: hidden;
+}
+
+.re-text{
+    padding: 0rpx 0rpx;     
+    width: 100%;
+    margin-top: 10rpx;
+    color: #333;
+}
+.popup-box{
+	border-radius: 10rpx;
+	width: 76vw;
+	height: auto;
+	background: #282B30;
+	overflow: hidden;
+	/* position: relative; */
+	box-sizing: border-box;
+    margin: auto;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+.popup-title{
+    text-align: center;
+    font-size: 40rpx;
+    line-height: 80rpx;
+    border-bottom: 2rpx solid #333
+}
+.popup-center{
+    padding: 40rpx 60rpx;
+    text-align: justify;
+    line-height: 48rpx;
+    font-size: 32rpx;
+    letter-spacing: 2rpx;
+}
+.popup-btn {
+    overflow: hidden;
+    padding: 40rpx 50rpx;
+    padding-top: 20rpx;
+    padding-bottom: 50rpx;
+    margin: auto;
+}
+.popup-btn view{
+    width: 45%;
+    height: 60rpx;
+    line-height: 60rpx;
+    text-align: center;
+    border-radius: 6rpx;
+}
+.popup-qx{
+    float: none;
+    margin: auto;
+    width: 80%;
+    border: 1px solid #f8d6a1;
+    box-sizing: border-box;
+}
+.rich-p{
+    font-size: 28rpx!important;
+    line-height: 44rpx;
+}

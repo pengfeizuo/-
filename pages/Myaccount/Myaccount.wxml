@@ -1,0 +1,10 @@
+<!--pages/Myaccount/Myaccount.wxml-->
+<view class='content'>
+    <image src='../../images/order-bg.png'></image>
+    <view class='o-left'>
+        <view>股币余额</view>
+        <text class='text-color'>{{datainfo}}</text> 
+    </view>
+    <view class='o-right g-chang-bg' bindtap='getxqgb'>领取股币</view>
+</view>
+

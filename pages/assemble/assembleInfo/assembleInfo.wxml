@@ -1,0 +1,98 @@
+<!--pages/assemble/assembleInfo/assembleInfo.wxml-->
+<view class='bg'><image class='bg-img' src='{{datainfo.img.img}}'></image></view>
+<view class='content'>
+    <view class="l-item">
+        <view class="l-img">
+            <image src="{{datainfo.list_title.path_img}}"></image>
+        </view>
+        <view class="l-info">
+            <view class='l-name'>{{datainfo.list_title.title}}</view>
+            <view class='progress'><text>{{datainfo.list_title.num}}</text>人团 价值 <text>{{datainfo.list_title.price}}</text>元</view>
+            <view class="l-time" bindtap='gettese'>
+                了解产品特色>>
+            </view>
+        </view>
+        <!-- <image class="l-price" src='../../../images/p-icon01.png' mode="widthFix"></image> -->
+        <view class='l-price g-chang-bg'> 
+            <text wx:if="{{datainfo.assemble_num.status==2||datainfo.assemble_num.status==1||datainfo.assemble_num.status==5}}">拼团中</text>
+            <text wx:if="{{datainfo.assemble_num.status==4}}" bindtap='getassemInfo'>查看详情</text>
+            <text wx:if="{{datainfo.assemble_num.status==3}}">拼团结束</text>
+        </view>
+    </view>
+</view>
+<view class='t-surplus' wx:if="{{datainfo.assemble_num.status!=3&&datainfo.assemble_num.status!=4}}">本期剩余 <text>{{rem_dd}}</text> 天 <text>{{rem_hh}}</text> 时 <text>{{rem_mm}}</text> 分 结束</view>
+<view class='p-tit'>参团详情</view>
+<view class='p-user'>
+    <view wx:for="{{datainfo.assemble_num.img_list}}" wx:key="{{index}}">
+        <image class='user-ph' src='{{item.avatar}}'></image>
+        <image wx:if="{{index==0&&datainfo.assemble_num.status!=1}}" class='icon-img' src="../../../images/captain.png" mode='widthFix'></image>
+    </view>
+    <!-- <view>
+        <image class='user-ph' src='../../../images/userlogo.png'></image>
+    </view>
+    <view>
+        <image class='user-ph' src='../../../images/userlogo.png'></image>
+    </view> -->
+</view>
+<view class='t-surplus' wx:if="{{datainfo.assemble_num.status==3}}">
+    {{datainfo.assemble_num.title}}
+<!-- 还差 <text class='r-num'>2</text> 人即可免费观看 -->
+</view>
+<view class='canyu g-chang-bg' wx:if="{{datainfo.assemble_num.status==2}}">
+    <button open-type='share'></button>
+    邀请好友参团
+</view>
+<view class='canyu g-chang-bg' wx:if="{{datainfo.assemble_num.status==1}}" bindtap='startAssemble'>
+    立即开团
+</view>
+<view class='canyu g-chang-bg' wx:if="{{datainfo.assemble_num.status==5}}" bindtap='startAssemble'>
+    立即加入
+</view>
+<view class='canyu g-chang-bg' wx:if="{{datainfo.assemble_num.status==4}}" >
+    拼团成功
+</view>
+<view class='canyu pinend' wx:if="{{datainfo.assemble_num.status==3}}" >
+    拼团结束
+</view>
+<view class='p-tit'>更多拼团</view>
+<view class='p-More'>
+    <view class="p-More-item" bindtap='moreinfo'>
+        <view class='p-more-info'>
+            <image src='{{datainfo.more[0].path_img}}'></image>
+        </view>
+        <view>{{datainfo.more[0].title}}</view>
+    </view>
+    <view class="p-More-item" bindtap='moreinfo2'>
+        <view class='p-more-info'>
+            <image src='{{datainfo.more[1].path_img}}'></image>
+        </view>
+        <view>{{datainfo.more[1].title}}</view>
+    </view>
+</view>
+<image class='canyu jieshi' src='../../../images/jieshi.png' mode='widthFix'></image>
+<view class='p-shuo'>
+    <view>1. 选择想要的产品或特权,转发给微信好友或发到微信群,邀请好友参与成团</view>
+    <view>2. 成团后团长和团员均可获得对应的产品或特权</view>
+    <view>3. 拼团成功后,权限会立即发放到您的账户里,您可以直接点击查看,或点击右侧” 客服”了解情况</view>
+    <view>4. 开团者可以是老用户，也可以是新用户,但参团者必须是新用户</view>
+    <view>5. 邀请好友已成团,可点击历史参团记录或在” 我的-我的拼团”中查看</view>
+</view>
+<l-popup show="{{ispopup}}"> 
+    <view class='popup-box'>
+        <view class='popup-title'>产品特色</view>
+        <view class='popup-center'>
+            {{datainfo.list_title.special}}
+        </view>
+        <view class='popup-btn'>
+            <view class='popup-qd g-chang-bg' bindtap='cancel'>确定</view>
+        </view>
+    </view>
+</l-popup>
+<l-toast />
+<view class='loading' wx:if="{{isload}}" catchtouchmove="preventTouchMove">
+    <button class="getuserinfo" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo"></button>
+    <view class="load-box">
+        <image src='../../../images/logo.png' mode='widthFix'></image>
+        <view class='text-color'>点击任意处授权登陆</view>
+    </view>
+</view>

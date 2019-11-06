@@ -1,0 +1,88 @@
+/* pages/assemble/assemble.wxss */
+page{
+    padding-bottom: 100rpx;
+}
+.bg-img{
+    width: 100vw;
+    height: 24vh;
+}
+.content{
+    padding: 20rpx;
+    box-sizing: border-box;
+    padding-bottom: 80rpx;
+}
+.l-item{
+    overflow: hidden;
+    margin-bottom: 20rpx;
+    padding: 20rpx 20rpx;
+    position: relative;
+    background: #282B30;
+}
+.l-img{
+    float: left;
+    width: 160rpx;
+}
+.l-img image{
+    width: 160rpx;
+    height: 160rpx;
+}
+.l-info{
+    margin-left: 160rpx;
+    padding:0 40rpx;
+}
+.l-price{
+    width: 120rpx;
+    position: absolute;
+    right: 20rpx;
+    top: 50%;
+    transform:  translateY(-50%)
+}
+.l-price2{
+    width: 120rpx;
+    position: absolute;
+    right: 20rpx;
+    top: 50%;
+    height: 50rpx;
+    text-align: center;
+    color: #333;
+    line-height: 48rpx;
+    transform: translateY(-50%);
+    border-radius:4rpx; 
+}
+.l-time{
+
+   margin-top: 80rpx;
+}   
+.l-name{
+   overflow: hidden;
+   white-space:  nowrap;
+   text-overflow:  ellipsis;
+}
+.progress{
+    margin: 40rpx 0;
+}
+.nav{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    background: #282B30;
+    width: 100%;
+}
+
+.nav > view{
+    flex: 1;
+    text-align: center;
+    height: 80rpx;
+    line-height: 80rpx;
+    position: relative;
+}
+.l-time2{
+    margin-top: 60rpx;
+}
+.l-time2 image{
+    height: 60rpx;
+    width: 60rpx;
+    margin-right: 10rpx;
+    border-radius:60rpx; 
+}

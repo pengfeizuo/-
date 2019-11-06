@@ -1,0 +1,13 @@
+{
+	"usingComponents": {
+		"l-grid": "/miniprogram_npm/lin-ui/grid/index",
+		"l-grid-item": "/miniprogram_npm/lin-ui/grid-item/index",
+		"l-icon": "/miniprogram_npm/lin-ui/icon/index",
+		"l-card": "/miniprogram_npm/lin-ui/card/index",
+		"l-popup": "/miniprogram_npm/lin-ui/popup/index",
+		"l-button": "/miniprogram_npm/lin-ui/button/index",
+		"l-input": "/miniprogram_npm/lin-ui/input/index",
+		"l-toast": "/miniprogram_npm/lin-ui/toast/index"
+	},
+    "navigationBarTitleText": "首页"
+}

@@ -1,0 +1,13 @@
+<!--pages/bannerInfo/bannerInfo.wxml-->
+<view class='content'>
+
+<view class="title">{{datainfo.titie}}</view>
+<view class="subtitle">
+    <text class='lf'>{{tiem1}}  {{datainfo.label}}</text>
+    <text class='rf'>{{tiem2}}</text>
+</view>
+<rich-text nodes="{{datainfo.content}}"></rich-text>
+<view class='guide-share'>
+    有钱一起赚，选股利器分享朋友  <view>去分享<text class="iconfont iconfenxiang4"></text> <button open-type='share' class=''></button></view>
+</view>
+</view>

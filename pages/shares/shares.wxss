@@ -1,0 +1,105 @@
+/* pages/shares/shares.wxss */
+page{
+    font-size: 28rpx;
+}
+.nav{
+    display: flex;
+    background: #282B30;
+    position: relative;
+    top: 2rpx;
+}
+
+.nav > view{
+    flex: 1;
+    text-align: center;
+    height: 80rpx;
+    line-height: 80rpx;
+    position: relative;
+    font-size: 26rpx;
+}
+.nav > view:nth-child(1){
+    flex: 1.1
+}
+.nav > view:nth-child(2){
+    flex: 1.1
+}
+.nav > view:nth-child(3){
+    flex: 0.9
+}
+.nav > view:nth-child(4){
+    flex: 0.9
+}
+.nav > view:last-child{
+    flex: .7
+}
+.nav > view::after{
+    position: absolute;
+    content: '';
+    width: 2rpx;
+    height: 40rpx;
+    top: 20rpx;
+    right: 0;
+    background: #000;
+}
+.nav > view:last-child::after{
+    display: none
+}
+.g-list{
+    display: flex;
+    border-bottom:2rpx solid #333; 
+    height: 100rpx;
+}
+.g-list > view{
+    flex: 1;
+    line-height: 100rpx;
+    text-align: center;
+    color: rgb(245, 27, 42);
+    font-size: 26rpx;
+}
+.g-list > view:first-child{
+    line-height: 40rpx;
+    padding-top: 10rpx;
+}
+.g-list > view:nth-child(1){
+    flex: 1.1
+}
+.g-list > view:nth-child(2){
+    flex: 1.1
+}
+.g-list > view:nth-child(3){
+    flex: 0.9
+}
+.g-list > view:nth-child(4){
+    flex: 0.9
+}
+
+.g-list > view:last-child{
+    flex: .7;
+}
+.g-notice{
+    padding: 40rpx;
+    font-size: 28rpx;
+    line-height: 40rpx;
+}
+.g-notice view{
+    margin-bottom: 10rpx;
+    text-align: justify;
+}
+.g-notice text{
+    margin-left: 10rpx;
+}
+.g-notice-tit{
+    font-weight: bold;
+    font: 32rpx;
+}
+.footer{
+    position: fixed;
+    width: 100%;
+    height: 100rpx;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    line-height: 100rpx;
+    font-size: 32rpx;
+    color: #333
+}

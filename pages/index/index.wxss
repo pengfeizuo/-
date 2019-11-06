@@ -1,0 +1,398 @@
+/* pages/index/index.wxss */
+page{
+    padding-bottom: 160rpx;
+}
+.swiper{
+    height: 320rpx;
+}
+.swiper swiper{
+    height: 320rpx;
+}
+.swiper image{
+    height: 100%;
+    width: 100%;
+}
+.menu{
+	padding: 40rpx 0;
+}
+.menu .text{
+	font-size: 28rpx;
+    color: rgb(255, 227, 155)
+}
+.menu .l-icon{
+	font-size: 60rpx;
+	margin-bottom: 16rpx;
+}
+.menu-icon{
+   
+    width: 120rpx;
+    height: 120rpx;
+    border-radius:120rpx;
+    border: 1px solid rgb(59, 55, 52) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu-icon image{
+    display: block;
+    width: 60rpx
+}
+.menu-type{
+	position: relative;
+	top: 8rpx;
+}
+.title{
+	overflow: hidden;
+	padding: 0 20rpx;
+}
+.title text{
+	float: left;
+	font-weight: bold;
+	margin-left: 10rpx;
+}
+.title .l-icon{
+	float: left;
+	font-size: 50rpx;
+	font-weight:lighter;
+}
+.list-image image{
+	width: 100%;
+	height: 250rpx;
+}
+.list-grid-item{
+	box-shadow: 0 0 20rpx #696969!important;
+	width: 100%;
+	height: 100%;
+	margin: 20rpx;
+}
+.list-title{
+	width: 100%;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.list-centent{
+	overflow: hidden;
+	padding-left: 20rpx;
+	box-sizing: border-box;
+	padding-bottom: 40rpx;
+}
+.list-item{
+	width: 50%;
+	float: left;
+	padding-right: 30rpx;
+	box-sizing: border-box;
+	padding-top: 30rpx;
+	
+}
+.list-item-content{
+	overflow: hidden;
+	box-shadow: 0 0 10rpx #ccc;
+	border-radius: 10rpx;
+}
+.list-image {
+	width: 100%;
+}
+.list-text{
+	font-size: 28rpx;
+	color: #696969;
+}
+.list-conter{
+	padding: 20rpx;
+	line-height: 48rpx;
+}
+.list-title{
+	padding-right: 42rpx;
+	position: relative;
+	box-sizing: border-box;
+	
+}
+.list-title text{
+	position: absolute;
+	right: 0;
+	color: red;
+	font-size: 24rpx;
+	top: 0;
+}
+
+.input-style {
+	width: 100% ;
+	border-bottom: 1px solid #f3f3f3;
+	overflow: hidden;
+}
+.input-style > view{
+	float: left;
+	width: 120rpx;
+	font-size: 28rpx;
+	line-height: 88rpx;
+	line-height: 88rpx;
+}
+.picker{
+	font-size: 28rpx;
+	border-bottom: 1px solid #f3f3f3;
+	height: 88rpx;
+	line-height: 88rpx;
+	overflow: hidden;
+}
+.picker > view{
+	float: left;
+	width: 120rpx;
+}
+.picker text{
+	opacity: .6;
+}
+.tijiao{
+	/* position: absolute; */
+	/* bottom: 40rpx; */
+	text-align: center;
+	left: 0;
+	width: 100%;
+	padding-top: 60rpx;
+}
+.input-item{
+	float: left;
+	height: 88rpx;
+	font-size: 28rpx;
+}
+.nodata{
+	font-size: 28rpx;
+	text-align: center;
+	color: #696969;
+	line-height: 60rpx;
+}
+.advert{
+    padding:20rpx;
+    overflow: hidden;
+}
+.advert view{
+    width: 49%;
+}
+.advert view:first-child{
+    float: left
+}
+.advert view:last-child{
+    float: right
+}
+.advert image{
+    width: 100%;
+}
+.notice{
+    overflow: hidden;
+    padding: 0 40rpx;
+    color: #fff1d0;
+    font-size: 28rpx;
+    position: relative;
+    height: 60rpx;
+    line-height: 60rpx;
+}
+.notice image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.notice .gong-g{
+    width: 100rpx;
+    float: left;
+}
+
+.constantly-box{
+    padding: 40rpx 14rpx;
+    padding-bottom: 0rpx;
+}
+.c-title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40rpx;
+}
+.constantly{
+    /* border: 1px solid rgb(231, 205, 152); */
+    border-radius:10rpx; 
+    padding: 26rpx 20rpx;
+    margin: 20rpx 0;
+    margin-bottom: 0;
+    padding-bottom: 20rpx;
+    position: relative;
+    background: rgb(40,43,48)
+}
+.constantly-time{
+    font-size: 12px;
+    color: #fff;
+}
+.constantly-title{
+    font-size: 16px;
+    line-height: 90rpx;
+    text-align: center;
+    font-weight: bold;
+}
+.constantly-state{
+    position: absolute;
+    right: 20rpx;
+    top: 20rpx;
+    height: 40rpx;
+    color: #333;
+    border-radius:40rpx; 
+    line-height: 40rpx;
+    font-size: 22rpx;
+    padding: 0 20rpx;
+    padding-right: 38rpx;
+}
+.constantly-state image{
+    width: 18rpx;
+    position: absolute;
+    right: 12rpx;
+    top: 8rpx;
+}
+
+.c-name{
+    text-align: center;
+}
+.c-name text{
+    display: inline-block;
+    width: 26rpx;
+    height: 26rpx;
+    border-radius:26rpx; 
+    border: 1px solid rgb(231, 205, 152);
+    margin-right: 8rpx;
+    position: relative;
+    top: 4rpx;
+}
+.s-list{
+    padding: 14rpx;
+    padding-bottom: 100rpx
+}
+.s-list-item{
+    background: rgb(29,32,37);
+    padding: 20rpx 0;
+    padding-bottom: 0;
+    margin-bottom: 14rpx;
+}
+.s-list-tit{
+    
+}
+.s-list-tit .s-photo{
+    float: left;
+    width: 64rpx;
+    height: 64rpx;
+    border-radius:64rpx; 
+}
+.s-tarth{
+    margin-left: 70rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.s-name{
+    font-size: 28rpx;
+}
+.s-name view{
+    display: inline-block;
+    position: relative;
+    color: #00e5ff;
+    font-size: 20rpx;
+    margin-left: 20rpx;
+    top: -4rpx
+}
+.s-name image{
+    left: -6rpx;
+    top: -20rpx;
+    position: absolute;
+    width: 80rpx;
+    /* height: 36rpx; */
+    z-index: 0;
+}
+.s-intr{
+    font-size: 20rpx;
+    letter-spacing: 2rpx;
+    opacity: 0.8;
+}
+.s-content{
+    padding: 10rpx;
+}
+.s-content image{
+    width: 100%;
+    margin: 10rpx 0;
+}
+.s-time{
+    font-size: 24rpx;
+}
+.wp{
+    margin-left: 100rpx;
+}
+.box{
+  position: relative;
+  width: 100%;
+  height: 60rpx;
+  line-height: 60rpx;
+  overflow: hidden;
+}
+
+.txt{
+  white-space: nowrap;
+}
+
+#txt1{
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: left 1s linear;
+}
+
+#txt2,.flex-box{
+  position: absolute;
+  top: 0;
+}
+
+.flex-box{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+@keyframes roll {
+  0% {left: 750rpx;}
+  100% {left: -100%;}
+}
+.constantly-time{
+    overflow: hidden;
+    text-overflow:  ellipsis;
+    white-space:  nowrap;
+}
+.loading{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+}
+.loading button{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 11;
+}
+.load-box{
+    position: relative;
+    z-index: 10
+}
+.load-box image{
+    width: 120rpx;
+}
+.tabber-img{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 100
+}

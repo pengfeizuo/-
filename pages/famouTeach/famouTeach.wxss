@@ -1,0 +1,24 @@
+/* pages/famouTeach/famouTeach.wxss */
+page{
+    padding: 20rpx;
+}
+.l-item{
+    overflow: hidden;
+    margin-bottom: 20rpx;
+    background: #282B30;
+    padding: 10rpx 30rpx;
+}
+.l-img{
+    float: left;
+    width: 180rpx;
+    height:220rpx;
+}
+.l-img image{
+    width: 100%;
+    height: 100%;
+}
+.l-info{
+    margin-left: 180rpx;
+    line-height: 220rpx;
+    padding-left: 80rpx;
+}
