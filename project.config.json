@@ -16,7 +16,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.8.0",
-	"appid": "wx3b625e82e23c09f3",
+	"appid": "",
 	"projectname": "garbage",
 	"debugOptions": {
 		"hidedInDevtools": []
